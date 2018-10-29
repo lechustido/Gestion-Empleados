@@ -1,0 +1,28 @@
+<h1>Empleados</h1>
+<ul *ngFor= "let empleado of listaEmpleados; let i = index">
+    <h3>Empleado {{i + 1}}</h3>
+    <li>
+        {{empleado.nombre}}
+    </li>
+    <li>
+        {{empleado.apellido1}}
+    </li>
+    <li>
+        {{empleado.apellido2}}
+    </li>
+    <li>
+        {{empleado.fecNacimiento}}
+    </li>
+    <li>
+        {{empleado.puesto}}
+    </li>
+    <li>
+        {{empleado.sueldo}}
+    </li>
+    <li>
+        {{empleado.telefono}}
+    </li>
+    <li>
+        {{empleado.extension}}
+    </li>
+</ul>
