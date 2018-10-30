@@ -1,0 +1,28 @@
+.linkActivo{
+    background-color: aqua;
+}
+.tablaProductos{
+    background-color: brown;
+    width: 30%;
+    float:left;
+    border:2px;
+    padding-right:  40px;
+}
+.productoElegido{
+    background-color: greenyellow;
+    width: 30%;
+    float:left;
+    border:2px;
+    padding-left: 40px;
+    padding-bottom: 15px;
+}
+.listaCaracteristicas{
+    float:left;
+    width: 60%;
+}
+.listaBotones{
+    float:left;
+    width: 30%;
+    padding-left: 10%;
+    padding-top: 20%;
+}

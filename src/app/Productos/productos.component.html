@@ -1,0 +1,47 @@
+<h2>Ventana de productos</h2>
+<div [ngClass] = "['tablaProductos']">
+    <ul *ngFor = "let producto of listaProductos; let i = index">
+        <div [ngClass] = "['listaCaracteristicas']">
+            <h3>Producto</h3>
+            <li>
+                Nombre: {{producto.nombre}}
+            </li>
+            <li>
+                Descripción: {{producto.descripcion}}
+            </li>
+            <li>
+                Precio: {{producto.precio}}
+            </li>
+            <li>
+                Categoría: {{producto.categoria}}
+            </li>
+            <li>
+                Agotado: {{producto.agotado}}
+            </li>  
+            <hr>   
+        </div>
+        <div [ngClass] = "['listaBotones']">
+                <button (click) = "seleccionarProducto(producto)" *ngIf = "producto.agotado == false">Seleccionar</button>
+                <button (click) = "seleccionarProducto(producto)" *ngIf = "producto.agotado == true" disabled>Seleccionar</button>
+        </div>
+    </ul>
+</div>
+<div [ngClass] = "['productoElegido']" *ngIf = "productoSeleccionado != undefined">
+    <h3>Producto seleccionado:</h3>
+    <li>
+            Nombre: {{productoSeleccionado.nombre}}
+        </li>
+        <li>
+            Descripción: {{productoSeleccionado.descripcion}}
+        </li>
+        <li>
+            Precio: {{productoSeleccionado.precio}}
+        </li>
+        <li>
+            Categoría: {{productoSeleccionado.categoria}}
+        </li>
+        <li>
+            Agotado: {{productoSeleccionado.agotado}}
+        </li>
+</div>
+<div style="clear:both"></div>
