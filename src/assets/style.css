@@ -26,3 +26,18 @@
     padding-left: 10%;
     padding-top: 20%;
 }
+.tablaEmpleados{
+    background-color: cyan;
+    width: 30%;
+    float:left;
+    border:2px;
+    padding-right:  40px;
+}
+.tablaEmpleadosDespedir{
+    background-color: rgb(7, 11, 250);
+    width: 30%;
+    float:left;
+    border:2px;
+    padding-left: 40px;
+    padding-bottom: 15px;
+}

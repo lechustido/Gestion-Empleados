@@ -11,6 +11,7 @@ import { EmpleadosComponent } from './Empleados/empleados.component';
 import { InicioComponent } from './Inicio/inicio.component';
 import { MenuPrincipalComponent } from "./MenuPrincipal/menuPrincipal.component";
 import { ProductosComponent } from "./Productos/productos.component";
+import { MultiplicacionPipe } from "./pipes/multiplicacion.pipe";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProductosComponent } from "./Productos/productos.component";
     EmpleadosComponent,
     InicioComponent,
     MenuPrincipalComponent,
-    ProductosComponent
+    ProductosComponent,
+    MultiplicacionPipe
   ],
   imports: [
     BrowserModule,

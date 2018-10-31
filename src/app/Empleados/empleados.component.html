@@ -1,28 +1,67 @@
-<h1>Empleados</h1>
-<ul *ngFor= "let empleado of listaEmpleados; let i = index">
-    <h3>Empleado {{i + 1}}</h3>
-    <li>
-        {{empleado.nombre}}
-    </li>
-    <li>
-        {{empleado.apellido1}}
-    </li>
-    <li>
-        {{empleado.apellido2}}
-    </li>
-    <li>
-        {{empleado.fecNacimiento}}
-    </li>
-    <li>
-        {{empleado.puesto}}
-    </li>
-    <li>
-        {{empleado.sueldo}}
-    </li>
-    <li>
-        {{empleado.telefono}}
-    </li>
-    <li>
-        {{empleado.extension}}
-    </li>
-</ul>
+<div [ngClass] = "['tablaEmpleados']">
+    <h1>Empleados</h1>
+    {{ 9 | multiplicacion: 6}}
+    <ul *ngFor= "let empleado of listaEmpleados; let i = index">
+        <h3>Empleado {{i + 1}}</h3>
+        <li>
+            {{empleado.nombre}}
+        </li>
+        <li>
+            {{empleado.apellido1}}
+        </li>
+        <li>
+            {{empleado.apellido2}}
+        </li>
+        <li>
+            {{empleado.fecNacimiento}}
+        </li>
+        <li>
+            {{empleado.puesto}}
+        </li>
+        <li>
+            {{empleado.sueldo}}
+        </li>
+        <li>
+            {{empleado.telefono}}
+        </li>
+        <li>
+            {{empleado.extension}}
+        </li>
+        <li>
+            <button (click) = "anadirEmpleadoDespedir(empleado)">Despedir trabajador</button>
+        </li>
+    </ul>
+</div>
+<div [ngClass] = "['tablaEmpleadosDespedir']">
+    <h1>Lista de empleados a despedir</h1>
+    <ul *ngFor= "let empleado of listaEmpleadosDespedir; let i = index">
+        <h3>Empleado {{i + 1}}</h3>
+        <li>
+            {{empleado.nombre}}
+        </li>
+        <li>
+            {{empleado.apellido1}}
+        </li>
+        <li>
+            {{empleado.apellido2}}
+        </li>
+        <li>
+            {{empleado.fecNacimiento}}
+        </li>
+        <li>
+            {{empleado.puesto}}
+        </li>
+        <li>
+            {{empleado.sueldo}}
+        </li>
+        <li>
+            {{empleado.telefono}}
+        </li>
+        <li>
+            {{empleado.extension}}
+        </li>
+        <li>
+            <button (click) = "eliminarEmpleadoDespedir(i)">Quitar de la lista</button>
+        </li>
+    </ul>
+</div>
